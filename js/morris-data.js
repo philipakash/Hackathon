@@ -60,25 +60,25 @@ $(function() {
         hideHover: 'auto',
         resize: true
     });
-	var taskCompleted;
-	var taskProgress;
-	var taskReassigned;
-	var taskFailed;
+	var taskCompleted=5;
+	var taskProgress=4;
+	var taskReassigned=3;
+	var taskFailed=1;
 	
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
             label: "Tasks Completed",
-            value: 12
+            value: taskCompleted
         }, {
             label: "Tasks in Progress",
-            value: 30
+            value: taskProgress
         }, {
             label: "Tasks Reassigned",
-            value: 20
+            value: taskReassigned
         }, {
             label: "Tasks Failed",
-            value: 20
+            value: taskFailed
         }],
         resize: true
     });
